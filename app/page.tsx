@@ -1,5 +1,7 @@
 import CaseStudiesSection from "@/components/case-studies-section"
+import ContactSection from "@/components/contact-section"
 import CtaSection from "@/components/cta-section"
+import Footer from "@/components/footer"
 import Hero from "@/components/hero"
 import LogoCloud from "@/components/logo-cloud"
 import Navbar from "@/components/navbar"
@@ -21,6 +23,8 @@ function Home() {
       <WorkingProcessSection />
       <TeamSection />
       <TestimonialsSection />
+      <ContactSection />
+      <Footer />
     </div>
   )
 }

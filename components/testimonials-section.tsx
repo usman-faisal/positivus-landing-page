@@ -7,8 +7,6 @@ import {
     CarouselApi,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from './ui/carousel';
 import Button from './button';
 
@@ -56,7 +54,7 @@ export default function TestimonialsSection() {
                 description="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More About Our Digital Marketing Services"
             />
 
-            <div className="bg-dark rounded-[56px] pt-[84px] pb-[68px]">
+            <div className="bg-dark rounded-[40px] pt-[84px] pb-[68px]">
 
                 <Carousel setApi={setCarouselApi} opts={{ loop: true }}>
                     <CarouselContent>
@@ -75,7 +73,7 @@ export default function TestimonialsSection() {
                     <div className="flex justify-center items-center mt-[124px] gap-[200px]">
                         <button disabled={currentIndex === 0} onClick={() => carouselApi?.scrollPrev()}>
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.5 12.5459C22.3284 12.5459 23 11.8743 23 11.0459C23 10.2175 22.3284 9.5459 21.5 9.5459L21.5 11.0459L21.5 12.5459ZM0.439341 9.98524C-0.146446 10.571 -0.146446 11.5208 0.43934 12.1066L9.98528 21.6525C10.5711 22.2383 11.5208 22.2383 12.1066 21.6525C12.6924 21.0667 12.6924 20.117 12.1066 19.5312L3.62132 11.0459L12.1066 2.56062C12.6924 1.97483 12.6924 1.02508 12.1066 0.439296C11.5208 -0.146491 10.5711 -0.146491 9.98528 0.439296L0.439341 9.98524ZM21.5 11.0459L21.5 9.5459L1.5 9.5459L1.5 11.0459L1.5 12.5459L21.5 12.5459L21.5 11.0459Z" fill="white" fill-opacity={currentIndex === 0 ? '0.3': '1'} />
+                            <path d="M21.5 12.5459C22.3284 12.5459 23 11.8743 23 11.0459C23 10.2175 22.3284 9.5459 21.5 9.5459L21.5 11.0459L21.5 12.5459ZM0.439341 9.98524C-0.146446 10.571 -0.146446 11.5208 0.43934 12.1066L9.98528 21.6525C10.5711 22.2383 11.5208 22.2383 12.1066 21.6525C12.6924 21.0667 12.6924 20.117 12.1066 19.5312L3.62132 11.0459L12.1066 2.56062C12.6924 1.97483 12.6924 1.02508 12.1066 0.439296C11.5208 -0.146491 10.5711 -0.146491 9.98528 0.439296L0.439341 9.98524ZM21.5 11.0459L21.5 9.5459L1.5 9.5459L1.5 11.0459L1.5 12.5459L21.5 12.5459L21.5 11.0459Z" fill="white" fillOpacity={currentIndex === 0 ? '0.3': '1'} />
                         </svg>
                         </button>
 
@@ -98,7 +96,7 @@ export default function TestimonialsSection() {
                         </div>
                         <button disabled={currentIndex === testimonials.length - 1} onClick={() => carouselApi?.scrollNext()}>
                         <svg width="23" className='rotate-180' height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.5 12.5459C22.3284 12.5459 23 11.8743 23 11.0459C23 10.2175 22.3284 9.5459 21.5 9.5459L21.5 11.0459L21.5 12.5459ZM0.439341 9.98524C-0.146446 10.571 -0.146446 11.5208 0.43934 12.1066L9.98528 21.6525C10.5711 22.2383 11.5208 22.2383 12.1066 21.6525C12.6924 21.0667 12.6924 20.117 12.1066 19.5312L3.62132 11.0459L12.1066 2.56062C12.6924 1.97483 12.6924 1.02508 12.1066 0.439296C11.5208 -0.146491 10.5711 -0.146491 9.98528 0.439296L0.439341 9.98524ZM21.5 11.0459L21.5 9.5459L1.5 9.5459L1.5 11.0459L1.5 12.5459L21.5 12.5459L21.5 11.0459Z" fill="white" fill-opacity={currentIndex === testimonials.length - 1 ? '0.3': '1'} />
+                            <path d="M21.5 12.5459C22.3284 12.5459 23 11.8743 23 11.0459C23 10.2175 22.3284 9.5459 21.5 9.5459L21.5 11.0459L21.5 12.5459ZM0.439341 9.98524C-0.146446 10.571 -0.146446 11.5208 0.43934 12.1066L9.98528 21.6525C10.5711 22.2383 11.5208 22.2383 12.1066 21.6525C12.6924 21.0667 12.6924 20.117 12.1066 19.5312L3.62132 11.0459L12.1066 2.56062C12.6924 1.97483 12.6924 1.02508 12.1066 0.439296C11.5208 -0.146491 10.5711 -0.146491 9.98528 0.439296L0.439341 9.98524ZM21.5 11.0459L21.5 9.5459L1.5 9.5459L1.5 11.0459L1.5 12.5459L21.5 12.5459L21.5 11.0459Z" fill="white" fillOpacity={currentIndex === testimonials.length - 1 ? '0.3': '1'} />
                         </svg>
                         </button>
                     </div>
