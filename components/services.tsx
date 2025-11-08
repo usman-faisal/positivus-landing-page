@@ -1,14 +1,15 @@
 import ServiceCard from './service-card';
-
 import SectionHeader from './section-header';
 
 export default function ServicesSection() {
   return (
-    <section className="my-[70px] space-y-20">
-      <SectionHeader title="Services" description="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:" />
+    <section className="my-[40px] md:my-[70px] space-y-12 md:space-y-20">
+      <SectionHeader 
+        title="Services" 
+        description="At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:" 
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
-
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-8 md:mt-12">
         <ServiceCard
           variant="light"
           illustrationSrc="/assets/seo-illustration.png"

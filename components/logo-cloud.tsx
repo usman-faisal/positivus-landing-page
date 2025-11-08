@@ -9,15 +9,25 @@ const logos = [
 
 export default function LogoCloud() {
   return (
-    <div className='my-[70px]'>
-      <div className="flex justify-between items-center gap-8">
-        {logos.map((logo) => (
-          <img 
-            key={logo.alt} 
-            src={logo.src} 
-            alt={logo.alt} 
-            className="h-12 w-auto grayscale" 
-          />
+    <div className="my-[70px] w-full overflow-hidden">
+      <div className="flex gap-8 md:gap-12 lg:gap-16 animate-marquee hover:[animation-play-state:paused]">
+        {logos.map((logo, index) => (
+          <div key={`${logo.alt}-1-${index}`} className="shrink-0">
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              className="h-8 sm:h-10 md:h-12 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
+        ))}
+        {logos.map((logo, index) => (
+          <div key={`${logo.alt}-2-${index}`} className="shrink-0">
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              className="h-8 sm:h-10 md:h-12 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
         ))}
       </div>
     </div>

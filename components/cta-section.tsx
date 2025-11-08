@@ -4,7 +4,7 @@ export default function CtaSection() {
   return (
     <section className="relative mt-30 ">
       
-      <div className="bg-light rounded-[30px] p-[60px] grid grid-cols-2 items-center">
+      <div className="bg-light rounded-[30px] p-[60px] grid grid-cols-1 items-center">
         
         <div className="flex flex-col gap-6 max-w-[500px]">
           <h2 className="font-medium text-3xl">
@@ -27,7 +27,7 @@ export default function CtaSection() {
       <img 
         src="/assets/cta-illustration.png" 
         alt="Decorative illustration"
-        className="absolute w-[360px] -top-4 right-[186px] z-10"
+        className="absolute w-[360px] -top-4 right-[186px] z-10 hidden lg:block"
       />
     </section>
   );

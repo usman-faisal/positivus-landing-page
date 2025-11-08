@@ -1,6 +1,6 @@
 import SectionHeader from './section-header';
 import TeamMemberCard from './team-member-card';
-import Button from './button'; // Your reusable button
+import Button from './button';
 
 const teamMembers = [
   {
@@ -55,14 +55,14 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className="mb-[100px] ">
+    <section className="mb-[60px] md:mb-[80px] lg:mb-[100px]">
       
       <SectionHeader
         title="Team"
         description="Meet the skilled and experienced team behind our successful digital marketing strategies"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 mt-12 md:mt-16 lg:mt-20">
         {teamMembers.map((member) => (
           <TeamMemberCard
             key={member.id}
@@ -75,8 +75,8 @@ export default function TeamSection() {
         ))}
       </div>
 
-      <div className="text-end mt-10">
-        <Button className="bg-dark text-white">
+      <div className="text-center sm:text-end mt-8 md:mt-10">
+        <Button className="bg-dark text-white w-full sm:w-auto">
           See all team
         </Button>
       </div>
