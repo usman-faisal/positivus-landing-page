@@ -21,7 +21,7 @@ export default function AccordionItem({
       className={`border space-y-[60px] shadow-[0px_5px_0px_0px_#191A23] border-light rounded-[45px] py-10 px-[60px] ${bgClass} transition-all duration-300`}
     >
       <button
-        className="flex justify-between border-black items-center w-full"
+        className="flex justify-between border-black items-center w-full cursor-pointer"
         onClick={onToggle}
       >
         <div className="flex items-center gap-[25px]">

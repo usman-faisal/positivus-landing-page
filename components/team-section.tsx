@@ -1,6 +1,6 @@
 import SectionHeader from './section-header';
 import TeamMemberCard from './team-member-card';
-import Button from './ui/button'; // Your reusable button
+import Button from './button'; // Your reusable button
 
 const teamMembers = [
   {

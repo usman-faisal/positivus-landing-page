@@ -1,4 +1,4 @@
-import Button from "./ui/button";
+import Button from "./button";
 import HeroImage from "../assets/hero-image.png"
 export default function Hero() {
     return (

@@ -5,6 +5,7 @@ import LogoCloud from "@/components/logo-cloud"
 import Navbar from "@/components/navbar"
 import ServicesSection from "@/components/services"
 import TeamSection from "@/components/team-section"
+import TestimonialsSection from "@/components/testimonials-section"
 import WorkingProcessSection from "@/components/working-process-section"
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
       <CaseStudiesSection />
       <WorkingProcessSection />
       <TeamSection />
+      <TestimonialsSection />
     </div>
   )
 }
